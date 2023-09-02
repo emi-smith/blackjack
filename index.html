@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Blackjack</title>
+		<link rel="stylesheet" href="./src/index.css" />
+		<link rel="icon" href="./images/Favicon.png" />
+	</head>
+	<body>
+		<section id="main">
+			<h1>Blackjack</h1>
+			<h2 id="message-el">Want to play a round?</h2>
+			<div id="cards-container">
+				<div class="cards">
+					<h3 id="cards-title">Cards</h3>
+					<p id="cards-el"></p>
+				</div>
+
+				<div id="hidden-sum" class="sum">
+					<h3 id="sum-title">Sum:</h3>
+					<p id="sum-el"></p>
+				</div>
+			</div>
+			<div id="btn-container">
+				<button type="button" onclick="startGame()">START GAME</button>
+				<button type="button" onclick="newCard()">NEW CARD</button>
+				<button type="button" onclick="KeepPlaying()">KEEP PLAYING</button>
+			</div>
+			<div id="player-container">
+				<p id="player-name-el"></p>
+				<p id="player-el"></p>
+			</div>
+		</section>
+		<script async src="./src/index.js"></script>
+	</body>
+</html>
